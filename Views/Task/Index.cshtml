@@ -1,7 +1,7 @@
 @model IEnumerable<TaskManager.Models.Task>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Minhas Tarefas";
 }
 
 <h1>Tarefas</h1>
@@ -9,6 +9,14 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+<form asp-controller="Task" asp-action="Index" method="post">
+    <p>
+        <label>Nome da Tarefa: <input type="text" name="SearchString"/></label>
+        <input type="submit"value="Filter"/>
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>
@@ -30,9 +38,9 @@
                 @Html.DisplayFor(model => item.Description)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
             </td>
         </tr>
 }

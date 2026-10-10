@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using TaskManager.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("TaskManagerContext") ?? throw new InvalidOperationException("Connection string 'TaskManagerContext' not found.");
 
@@ -8,6 +10,13 @@ builder.Services.AddDbContext<TaskManagerContext>(options => options.UseSqlServe
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+
+    SeedData.Initialize(services);
+}
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

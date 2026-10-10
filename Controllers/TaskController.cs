@@ -13,9 +13,22 @@ public class TaskController : Controller
     }
 
     // GET: TASKS
-    public async Task<IActionResult> Index()    
+    public async Task<IActionResult> Index(string searchString)    
     {
-        return View(await _context.Task.ToListAsync());
+        if (_context.Task == null)
+        {
+            return Problem("Entity set 'TaskManagerContext.Task' is nulll");
+        }
+
+        var tasks = from m in _context.Task
+                    select m;
+
+        if (!String.IsNullOrEmpty(searchString))
+        {
+            tasks = tasks.Where(s => s.Name!.ToUpper().Contains(searchString.ToUpper()));
+        }
+
+        return View(await tasks.ToListAsync());
     }
 
     // GET: TASKS/Details/5
