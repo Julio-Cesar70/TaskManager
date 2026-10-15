@@ -13,13 +13,78 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    margin: 0;
+    position: relative;
+    min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+
+/* ===== Identidade visual do TaskManager ===== */
+
+:root {
+    --task-primary: #2563eb;
+    --task-primary-hover: #1d4ed8;
+    --task-background: #f4f7fb;
+    --task-text: #1e293b;
+    --task-muted: #64748b;
 }
+
+/* Fundo e tipografia da aplicação */
+body {
+    background-color: var(--task-background);
+    color: var(--task-text);
+    font-family: Arial, sans-serif;
+}
+
+/* Área principal da página inicial */
+.home-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Cartão de boas-vindas */
+.home-card {
+    background-color: #ffffff;
+    padding: 48px 32px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.07);
+}
+
+/* Título */
+.home-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+/* Texto auxiliar */
+.home-description {
+    color: var(--task-muted);
+    font-size: 1.05rem;
+    margin-bottom: 28px;
+}
+
+/* Botão principal */
+.btn-task {
+    display: inline-block;
+    background-color: var(--task-primary);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 22px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+    .btn-task:hover {
+        background-color: var(--task-primary-hover);
+        color: #ffffff;
+        transform: translateY(-2px);
+    }
+
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
   color: var(--bs-secondary-color);
