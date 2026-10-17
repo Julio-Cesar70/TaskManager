@@ -4,45 +4,51 @@
     ViewData["Title"] = "Minhas Tarefas";
 }
 
-<h1>Tarefas</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-
-<form asp-controller="Task" asp-action="Index" method="post">
-    <p>
-        <label>Nome da Tarefa: <input type="text" name="SearchString"/></label>
-        <input type="submit"value="Filtrar"/>
-    </p>
-</form>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(model => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(model => item.Description)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
-            </td>
-        </tr>
+@section Styles {
+    <link rel="stylesheet" href="~/css/tasks.css" />
 }
-    </tbody>
-</table>
+
+<div class="task-container">
+    <h1 class="title">Tarefas</h1>
+
+    <form asp-controller="Task" asp-action="Index" method="post" class="form-task">
+        <p>
+            <label class="label-task">Nome da Tarefa: <input type="text" name="SearchString"/></label>
+            <input type="submit"value="Filtrar" class="btn-filter"/>
+        </p>
+    </form>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Description)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Description)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Excluir</a>
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+    <p><a asp-action="Create" class="btn btn-primary">Criar Tarefa</a></p>
+</div>
+

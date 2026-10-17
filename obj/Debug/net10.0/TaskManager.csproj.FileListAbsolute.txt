@@ -155,7 +155,6 @@ C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\rjsmcshtml.dsw
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\scopedcss\bundle\TaskManager.styles.css
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\scopedcss\projectbundle\TaskManager.bundle.scp.css
-C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\x9hx9mvgyi-{0}-b9sayid5wm-b9sayid5wm.gz
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\aoajrqnzyn-{0}-61n19gt1b8-61n19gt1b8.gz
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\7qt227jrmt-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\sn5vxzkn1k-{0}-bqjiyaj88i-bqjiyaj88i.gz
@@ -230,3 +229,6 @@ C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\refint\TaskMan
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\TaskManager.pdb
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\TaskManager.genruntimeconfig.cache
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\ref\TaskManager.dll
+C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\jhruhzztps-{0}-xps67x0rsp-xps67x0rsp.gz
+C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\x9hx9mvgyi-{0}-aozhfwxsi6-aozhfwxsi6.gz
+C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\kyn8icbml3-{0}-gv2dz29tui-gv2dz29tui.gz

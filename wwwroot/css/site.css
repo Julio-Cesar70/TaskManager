@@ -53,7 +53,7 @@ body {
 }
 
 /* Título */
-.home-title {
+.title {
     font-size: 2.3rem;
     font-weight: 700;
     margin-bottom: 16px;
@@ -67,7 +67,7 @@ body {
 }
 
 /* Botão principal */
-.btn-task {
+.btn-primary {
     display: inline-block;
     background-color: var(--task-primary);
     color: #ffffff;
@@ -79,12 +79,28 @@ body {
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-    .btn-task:hover {
+    .btn-primary:hover {
         background-color: var(--task-primary-hover);
         color: #ffffff;
         transform: translateY(-2px);
     }
 
+.btn-backToList {
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    /*    transition: background-color 0.2s ease, transform 0.2s ease;*/
+    margin-top: 8px;
+}
+
+    .btn-backToList:hover {
+        transform: translateY(-2px);
+    }
+
+
+.form-group {
+    margin-bottom: 15px;
+}
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
   color: var(--bs-secondary-color);

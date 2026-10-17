@@ -2,9 +2,13 @@
     ViewData["Title"] = "Home Page";
 }
 
+@section Styles {
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+}
+
 <div class="home-container">
     <section class="home-card">
-        <h1 class="home-title">
+        <h1 class="title">
             Gerenciador de Tarefas
         </h1>
 
@@ -15,7 +19,7 @@
 
         <a asp-controller="Task"
            asp-action="Index"
-           class="btn-task">
+           class="btn-primary">
             Consultar minhas tarefas
         </a>
     </section>

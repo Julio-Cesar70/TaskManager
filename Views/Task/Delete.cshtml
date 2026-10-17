@@ -1,14 +1,15 @@
 @model TaskManager.Models.Task
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Deletar Tarefa";
 }
 
-<h1>Delete</h1>
+@section Styles {
+    <link rel="stylesheet" href="~/css/delete.css" asp-append-version="true" />
+}
 
-<h3>Are you sure you want to delete this?</h3>
+<h1 class="title">Deletar Tarefa</h1>
 <div>
-    <h4>TaskManager.Models.Task</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -20,7 +21,7 @@
     </dl>
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <input type="submit" value="Deletar" class="btn btn-danger" /> |
+        <a asp-action="Index" class="btn-backToList">Voltar para Lista</a>
     </form>
 </div>

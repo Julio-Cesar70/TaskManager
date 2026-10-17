@@ -1,0 +1,37 @@
+﻿.task-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-task {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin: 0;
+}
+
+.label-task {
+    font-weight: bold;
+    color: var(--task-primary);
+    margin: 0;
+}
+
+.btn-filter {
+    display: inline-block;
+    background-color: var(--task-primary);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 6px 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+    .btn-filter:hover {
+        background-color: var(--task-primary-hover);
+        color: #ffffff;
+        transform: translateY(-2px);
+    }
