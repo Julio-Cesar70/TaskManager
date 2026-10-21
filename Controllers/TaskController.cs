@@ -27,7 +27,7 @@ public class TaskController : Controller
         {
             tasks = tasks.Where(s => s.Name!.ToUpper().Contains(searchString.ToUpper()));
         }
-
+;
         return View(await tasks.ToListAsync());
     }
 

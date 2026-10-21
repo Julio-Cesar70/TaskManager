@@ -229,6 +229,7 @@ C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\refint\TaskMan
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\TaskManager.pdb
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\TaskManager.genruntimeconfig.cache
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\ref\TaskManager.dll
-C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\jhruhzztps-{0}-xps67x0rsp-xps67x0rsp.gz
-C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\x9hx9mvgyi-{0}-aozhfwxsi6-aozhfwxsi6.gz
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\kyn8icbml3-{0}-gv2dz29tui-gv2dz29tui.gz
+C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\jhruhzztps-{0}-v6gpc1nwwv-v6gpc1nwwv.gz
+C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\x9hx9mvgyi-{0}-h0rkezagfy-h0rkezagfy.gz
+C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
