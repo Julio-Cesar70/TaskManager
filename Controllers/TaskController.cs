@@ -27,37 +27,17 @@ public class TaskController : Controller
         {
             tasks = tasks.Where(s => s.Name!.ToUpper().Contains(searchString.ToUpper()));
         }
-;
+
         return View(await tasks.ToListAsync());
     }
 
-    // GET: TASKS/Details/5
-    public async Task<IActionResult> Details(int? id)
-    {
-        if (id == null)
-        {
-            return NotFound();
-        }
-
-        var task = await _context.Task
-            .FirstOrDefaultAsync(m => m.Id == id);
-        if (task == null)
-        {
-            return NotFound();
-        }
-
-        return View(task);
-    }
-
-    // GET: TASKS/Create
+    // GET: Task/Create
     public IActionResult Create()
     {
         return View();
     }
 
     // POST: TASKS/Create
-    // To protect from overposting attacks, enable the specific properties you want to bind to.
-    // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
     [HttpPost]
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create([Bind("Id,Name,Description")] TaskManager.Models.Task task)
