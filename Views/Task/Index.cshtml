@@ -23,7 +23,7 @@
                    value="@Context.Request.Query["SearchString"]"
                    placeholder="Digite o nome da tarefa..."/>
 
-            <button type="submit" class="btn-primary">
+            <button type="submit" class="btn-filter">
                 Filtrar
             </button>
         </div>
@@ -36,6 +36,7 @@
             <strong>Nenhuma tarefa encontrada!</strong>
             <p>Não encontramos nenhuma tarefa com esse nome.</p>
         </div>
+        <a asp-action="Index" class="btn-backToList">Voltar para Lista</a>
     }
     else
     {
@@ -63,10 +64,11 @@
                     }
                     </tbody>
                 </table>
+                    <p>
+                        <a asp-action="Create" class="btn-primary">Adicionar Tarefa</a>
+                    </p>
             </div>
         }
 
-        <p>
-            <a asp-action="Create" class="btn-primary">Adicionar Tarefa</a>
-        </p>
+
 </div>

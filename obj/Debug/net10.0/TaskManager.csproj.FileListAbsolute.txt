@@ -230,5 +230,5 @@ C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\TaskManager.pd
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\TaskManager.genruntimeconfig.cache
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\ref\TaskManager.dll
 C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\jhruhzztps-{0}-v6gpc1nwwv-v6gpc1nwwv.gz
-C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\x9hx9mvgyi-{0}-q1nxc8vw7j-q1nxc8vw7j.gz
-C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\kyn8icbml3-{0}-v5qghis0st-v5qghis0st.gz
+C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\kyn8icbml3-{0}-y8w6bzq4ym-y8w6bzq4ym.gz
+C:\Users\julio\Projects\TaskManager\TaskManager\obj\Debug\net10.0\compressed\x9hx9mvgyi-{0}-q1u642lsky-q1u642lsky.gz
